@@ -1,0 +1,14 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <div>
+                Select Your Departmet
+            </div>
+            <ul>
+                <li *ngFor="let department of departments" [class.selected]="isSelected(department)" (click)="onSelect(department)">
+                   <span>{{department.id}}{{department.name}}</span>
+                </li>
+            </ul>
+        </div>
+    </div>
+</div>

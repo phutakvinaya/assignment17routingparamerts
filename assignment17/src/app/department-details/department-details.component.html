@@ -1,0 +1,29 @@
+<div class="container">
+    <div class="row">
+        <div class="col-md-12">
+            <h3>Thank for selecting the department</h3>
+            <h5>You selected Department with ID = {{departmentId}}</h5> 
+            <div *ngIf = 'departmentId == 1'>
+                <h5>Web development refers to the creation and maintenance of websites and web applications. </h5>
+            </div>
+            <div *ngIf = 'departmentId == 2'>
+                <h5>Testing in software development is a crucial process to ensure that the software behaves as expected, meets requirements, and remains robust even as changes are made to the codebase.  </h5>
+            </div>
+            <div *ngIf = 'departmentId == 3'>
+                <h5>Quality assurance (QA) is a systematic process implemented within a software development lifecycle to ensure that the final product meets specified quality standards and fulfills customer expectations.  </h5>
+            </div>
+            <div *ngIf = 'departmentId == 4'>
+                <h5>Support in the context of software development typically refers to the ongoing assistance provided to users or customers after a product or service has been delivered.  </h5>
+            </div>
+            <div *ngIf = 'departmentId == 5'>
+                <h5>"Back office" refers to the internal operations and administrative functions of a business or organization that are essential for its functioning but do not directly involve customer interactions.</h5>
+            </div>
+        </div>
+
+
+
+        <div>
+            <button class="btn btn-primary" (click)="gotoDepartments()">back</button>
+        </div>
+    </div>
+</div>
